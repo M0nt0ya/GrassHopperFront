@@ -3,41 +3,66 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GuardadoComponent } from './guardado/guardado.component';
-import { CorazonComponent } from './corazon/corazon.component';
-import { NavegacionComponent } from './navegacion/navegacion.component';
-import { GuardadoPComponent } from './paginas/guardado-p/guardado-p.component';
-import { PerfilPComponent } from './paginas/perfil-p/perfil-p.component';
-import { InicioPComponent } from './paginas/inicio-p/inicio-p.component';
-import { AutenticacionPComponent } from './paginas/autenticacion-p/autenticacion-p.component';
-import { RegistroComponent } from './paginas/autenticacion-p/registro/registro.component';
-import { AccesoComponent } from './paginas/autenticacion-p/acceso/acceso.component';
-import { MensajePComponent } from './paginas/mensaje-p/mensaje-p.component';
-import { RespuestaComponent } from './respuesta/respuesta.component';
-import { CompartirComponent } from './compartir/compartir.component';
-import { MensajeComponent } from './mensaje/mensaje.component';
-
+import { LikeComponent } from './like/like.component';
+import { BookmarkComponent } from './bookmark/bookmark.component';
+import { ReplyComponent } from './reply/reply.component';
+import { RetweetComponent } from './retweet/retweet.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'
+import { ReactiveFormsModule } from '@angular/forms';
+import { TweetComponent } from './tweet/tweet.component';
+import { TweetPageComponent } from './pages/tweet-page/tweet-page.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
+import { BookmarkPageComponent } from './pages/bookmark-page/bookmark-page.component';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import { ImageCropperModule } from 'ngx-image-cropper';
+import { SignInComponent } from './pages/landing-page/sign-in/sign-in.component';
+import { SignUpComponent } from './pages/landing-page/sign-up/sign-up.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarComponent } from './navbar/navbar.component';
+import { AuthGuard } from './services/auth.guard';
+import { TokenInterceptor } from './services/token-interceptor';
+import { NgxWebstorageModule } from 'ngx-webstorage';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
-    GuardadoComponent,
-    CorazonComponent,
-    NavegacionComponent,
-    GuardadoPComponent,
-    PerfilPComponent,
-    InicioPComponent,
-    AutenticacionPComponent,
-    RegistroComponent,
-    AccesoComponent,
-    MensajePComponent,
-    RespuestaComponent,
-    CompartirComponent,
-    MensajeComponent],
+    LikeComponent,
+    BookmarkComponent,
+    ReplyComponent,
+    RetweetComponent,
+    TweetComponent,
+    TweetPageComponent,
+    HomePageComponent,
+    ProfilePageComponent,
+    BookmarkPageComponent,
+    LandingPageComponent,
+    SignInComponent,
+    SignUpComponent,
+    NavbarComponent,
+    NotFoundComponent
+  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    ImageCropperModule,
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule,
+    NgxWebstorageModule.forRoot(),
   ],
-  providers: [],
+  providers: [
+    AuthGuard,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

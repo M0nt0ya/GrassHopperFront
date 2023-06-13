@@ -1,0 +1,95 @@
+body,
+html {
+    height: 100vh;
+    font-family: Roboto;
+    background-image: url(https://www.xtrafondos.com/wallpapers/resized/naturaleza-hojas-blanco-y-negro-7893.jpg?s=large);
+    background-size: cover;
+}
+
+.logo-small {
+    text-align: center;
+}
+
+.logo-small img {
+    text-align: center;
+    width: 5rem;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f5f8fae6;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    background-color: #ffffffae;
+    border-radius: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 14px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(72, 152, 79);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease;
+    width: 50%;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(57, 120, 62);
+}
+
+
+.login-link {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.login-link a {
+    color: rgb(72, 152, 79);
+    text-decoration: none;
+}

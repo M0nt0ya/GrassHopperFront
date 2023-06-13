@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    font-family: Roboto;
+    background-image: url(https://www.xtrafondos.com/wallpapers/resized/naturaleza-hojas-blanco-y-negro-7893.jpg?s=large);
+    background-size: cover;
+}
+
+
+main {
+ padding-top: 10px;
+}
+
+
+/* Tweet Form */
+.tweet-form__container {
+    border-radius: 20px ;
+    background-color: white;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    height: 200px;
+    display: flex;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+.tweet-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.tweet-form__footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tweet-form__footer-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tweet-form__footer-icons img {
+    width: 25px;
+    padding: 10px;
+    border-radius: 18px;
+}
+
+.tweet-form__footer-icons img:hover {
+
+    background-color: rgb(57, 120, 62);
+    cursor: pointer;
+}
+
+.tweet {
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
