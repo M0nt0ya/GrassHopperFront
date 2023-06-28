@@ -17,13 +17,18 @@
                 <span *ngIf="!form.get('username')?.valid && form.get('username')?.touched" style="color:red ;">Porfavor ingresa el Usuario</span>
                 <input  [formControlName]="'username'" type="text">
             </div> 
-            <label>Contraseñia</label>
+            <label>Contraseña</label>
             <div>
                 <span *ngIf="!form.get('password')?.valid && form.get('password')?.touched" style="color:red ;">Ingresa la contraseña</span>
                 <input  [formControlName]="'password'" type="password">
             </div> 
             
             <input type="submit" value="Iniciar">
+
+            <div class="pie-form">
+                <a href="/sign-up">¿No tienes Cuenta? Registrate</a>
+            </div>
+
         </form>
     </body>
 </html>

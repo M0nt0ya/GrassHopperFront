@@ -15,14 +15,14 @@ const routes: Routes = [
   {path : "" , component: LandingPageComponent},
   {path : "sign-in" , component: SignInComponent},
   {path : "sign-up" , component: SignUpComponent},
-  {path : "home" , component: HomePageComponent, canActivate: [AuthGuard]},
-  {path : "tweet/:id" , component: TweetPageComponent, canActivate: [AuthGuard]},
-  {path : "profile/tweets" , component: ProfilePageComponent, canActivate: [AuthGuard]},
-  {path : "profile/retweets" , component: ProfilePageComponent, canActivate: [AuthGuard]},
-  {path : "profile/replies" , component: ProfilePageComponent, canActivate: [AuthGuard]},
-  {path : "profile/likes" , component: ProfilePageComponent, canActivate: [AuthGuard]},
-  {path : "profile/update" , component: ProfilePageComponent, canActivate: [AuthGuard]},
-  {path : "bookmarks" , component: BookmarkPageComponent, canActivate: [AuthGuard]},
+  {path : "home" , component: HomePageComponent},
+  {path : "tweet/:id" , component: TweetPageComponent},
+  {path : "profile/tweets" , component: ProfilePageComponent},
+  {path : "profile/retweets" , component: ProfilePageComponent},
+  {path : "profile/replies" , component: ProfilePageComponent},
+  {path : "profile/likes" , component: ProfilePageComponent},
+  {path : "profile/update" , component: ProfilePageComponent},
+  {path : "bookmarks" , component: BookmarkPageComponent},
 ];
 
 // const routes: Routes = [

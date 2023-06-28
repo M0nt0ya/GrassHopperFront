@@ -3,7 +3,7 @@ body {
     justify-content: space-between;
     height: 100vh;
     font-family: Roboto;
-    background-image: url(https://www.xtrafondos.com/wallpapers/resized/naturaleza-hojas-blanco-y-negro-7893.jpg?s=large);
+    background-image: url(../../../assets/img/backgrond.jpg);
     background-size: cover;
 }
 
@@ -157,11 +157,11 @@ body {
 
 .navbar-item:hover {
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.06);
+    background-color: #4caf4f7b;
 }
 
 .active {
-    border-top: 3px solid #000000;
+    border-top: 3px solid #4CAF50;
 }
 
 .tweets {
@@ -176,40 +176,52 @@ body {
 .overlay__reply {
     height: 650px;
     width: 650px;
-    overflow-y: scroll;
 }
 
 .overlay__form {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 12px;
+    padding: 12px;  
+
 }
 
 .overlay__form input {
     height: 30px;
-    font-size: 24px;
+    font-size: 20px;
+    border: 2px solid #4CAF50;
+    margin-bottom: 4%;
+
+    border-radius: 10px;
 }
 
 .overlay__form textarea {
     height: 65px;
-    font-size: 24px;
+    font-size: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
     resize: none;
+    margin-bottom: 4%;
+
 }
 
+form_button{
+    background-color: #4CAF50;
+}
 .edit-button {
     text-align: center;
-    border: 1px solid gray;
+    background-color: #4caf4f00;
+    color: black;
     font-weight: 700;
     padding: 12px 5px;
     width: 100px;
-    border-radius: 35%;
+    border-radius: 10%;
 }
 
 .edit-button:hover {
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.03);
+    color: black;
+    background-color: #4caf4f7b;
 }
 
 .hover:hover {

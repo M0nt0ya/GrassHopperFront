@@ -18,7 +18,7 @@
                         <div>
                             <form id="newTweetForm" [formGroup]="newTweetForm" (ngSubmit)="tweet()">
                                 <textarea [formControlName]="'text'" id="text-area" class="tweet-form__text-area" name="text-area" rows="4"
-                                    cols="50" placeholder="What's Happenning?" required></textarea>
+                                    cols="50" placeholder="¿Lo que está sucediendo?" required></textarea>
                             </form>
                         </div>
 
@@ -31,7 +31,7 @@
                                 <img src="assets/svg/schedule.svg">
                                 <img src="assets/svg/location.svg">
                             </div>
-                            <input class="tweet-form__footer-button" type="submit" form="newTweetForm" value="Tweet">
+                            <input class="tweet-form__footer-button" type="submit" form="newTweetForm" value="Publicar">
                         </div>
                     </div>
                 </div>

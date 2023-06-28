@@ -2,9 +2,29 @@ body,
 html {
     height: 100vh;
     font-family: Roboto;
-    background-image: url(https://www.xtrafondos.com/wallpapers/resized/naturaleza-hojas-blanco-y-negro-7893.jpg?s=large);
+    background-image: url(../../../../assets/img/backgrond.jpg);
     background-size: cover;
 }
+
+.pie-form {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+}
+
+.pie-form a {
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+    color: rgb(72, 152, 79);
+}
+
+
+
 
 .logo-small {
     text-align: center;
