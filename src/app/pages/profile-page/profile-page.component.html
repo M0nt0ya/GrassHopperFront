@@ -70,13 +70,11 @@
             <div class="tweets-counter-container">{{user.firstName}} <span class="tweets-counter">Publicaciones</span></div>
             <div>
                 <div >
-                    <img src="https://www.xtrafondos.com/wallpapers/resized/naturaleza-hojas-blanco-y-negro-7893.jpg?s=large" class="header-photo">
-                    <!-- <img [src]="'http://localhost:8080/user/banner-picture/get/'+ user.username" class="header-photo"> -->
+                    <img [src]="'http://localhost:8080/user/banner-picture/get/'+ user.username" class="header-photo">
                 </div>  
                 <div class="profile-section">
                     <div class="profile-img-container">
-                        <!-- <img [src]="'http://localhost:8080/user/profile-picture/get/'+ user.username" class="profile-img"> -->
-                        <img src="../../../assets/img/GrassHopper.jpg" class="profile-img">
+                        <img [src]="'http://localhost:8080/user/profile-picture/get/'+ user.username" class="profile-img">
                         <div (click)="showOverlay()" class="edit-button">Editar Perfil</div>
                     </div>
                     <div style="padding-left:12px;">
