@@ -4,7 +4,7 @@ body {
   padding: 50px;
   height: 100vh;
   font-family: Roboto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.xtrafondos.com/wallpapers/resized/naturaleza-hojas-blanco-y-negro-7893.jpg?s=large);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/img/backgrond.jpg);
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);
   /* Ajusta el último valor (0.5) para cambiar la opacidad */

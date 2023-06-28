@@ -22,7 +22,7 @@ svg {
     /* min-height: 100%; */
     min-height: 100vh;
     flex-basis: 55%;
-    background-image: url(https://www.xtrafondos.com/wallpapers/resized/naturaleza-hojas-blanco-y-negro-7893.jpg?s=large);
+    background-image: url(../../../assets/img/backgrond.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
